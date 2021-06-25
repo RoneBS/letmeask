@@ -1,17 +1,17 @@
 import { FormEvent, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 
-import { Button } from '../components/Button';
+import { Button } from '../../components/Button';
 
-import logoImg from '../assets/images/logo.svg';
+import logoImg from '../../assets/images/logo.svg';
 
-import { RoomCode } from '../components/RoomCode';
-import { Question } from '../components/Question';
-import { useRoom } from '../hooks/useRoom';
+import { RoomCode } from '../../components/RoomCode';
+import { Question } from '../../components/Question';
+import { useRoom } from '../../hooks/useRoom';
 
-import '../styles/room.scss';
-import { database } from '../services/firebase';
+import { database } from '../../services/firebase';
+import './styles.scss';
 
 type RoomParams = {
   id: string;
